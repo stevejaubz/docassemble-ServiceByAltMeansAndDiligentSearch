@@ -79,7 +79,7 @@ fields:
 ---
 id: defendant last known address
 question: |
-  What is the defendant's last know address?
+  What is the defendant's last known address?
 # ${ defendant[0].name.possessive('last known address') }?
 fields:
   - I do not know their address: address_unknown 
@@ -110,7 +110,7 @@ if address_unknown:
 ---
 id: last lived at address
 question: |
-  When did ${ other_parties[0].name } last live at the above address?
+  When was the last time ${ other_parties[0].name } lived at the address you mentioned?
 subquestion: |
   This can be a guess or the exact date
 fields:
